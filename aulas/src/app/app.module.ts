@@ -5,22 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
-import { ReadMeGeneratorComponent } from './read-me-generator/read-me-generator.component';
 import { HomeComponent } from './home/home.component';
+import { ReadMeGeneratorComponent } from './read-me-generator/read-me-generator.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     CalculadoraComponent,
-    ReadMeGeneratorComponent,
     HomeComponent,
+    ReadMeGeneratorComponent,
     ExperimentsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
